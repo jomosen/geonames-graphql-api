@@ -25,6 +25,3 @@ class GeoNameDTO(BaseModel):
     dem: Optional[int] = Field(None, description="Digital elevation model (in meters)")
     timezone: Optional[str] = Field(None, description="Time zone name")
     modification_date: Optional[date] = Field(None, description="Last modification date (YYYY-MM-DD)")
-    postal_code_regex: Optional[str] = Field(None, description="Postal code regex pattern")
-    country_name: Optional[str] = Field(None, description="Full country name")
-    admin1_name: Optional[str] = Field(None, description="Name of the first-order administrative division")
