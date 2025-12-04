@@ -2,7 +2,8 @@ from abc import ABC, abstractmethod
 from sqlalchemy.engine import Engine
 from sqlalchemy.orm import Session
 
-class BaseSQLConnector(ABC):
+
+class BaseSqlConnector(ABC):
 
     @property
     @abstractmethod

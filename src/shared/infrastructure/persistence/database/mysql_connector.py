@@ -2,10 +2,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.engine import Engine
 from sqlalchemy.orm import sessionmaker, scoped_session, Session
 
-from shared.infrastructure.persistence.database.base_sql_connector import BaseSQLConnector
+from shared.infrastructure.persistence.database.base_sql_connector import BaseSqlConnector
 
 
-class MySQLConnector(BaseSQLConnector):
+class MySQLConnector(BaseSqlConnector):
     def __init__(self, db_url: str, echo: bool = False):
         self._engine: Engine = create_engine(
             db_url,
